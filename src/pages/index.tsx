@@ -1,16 +1,15 @@
-import React from 'react';
-import { HeadFC, Link } from 'gatsby';
+import * as React from 'react';
+import { HeadFC } from 'gatsby';
+import Layout from '../components/layout';
 
 const IndexPage = () => {
   return (
-    <main>
-      <h1>Welcome to my first GatsbyJS site</h1>
-      <Link to="/about">About</Link>
-      <p>I'm building this by following the Gatsby tutorial</p>
-    </main>
+    <Layout pageTitle="Welcome to my Gatsby site">
+      <p>I am building this by following the Gatsby tutorial</p>
+    </Layout>
   );
 };
 
-export default IndexPage;
-
 export const Head: HeadFC = () => <title>Home Page</title>;
+
+export default IndexPage;

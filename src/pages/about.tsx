@@ -1,16 +1,15 @@
-import React from 'react';
-import { HeadFC, Link } from 'gatsby';
+import * as React from 'react';
+import { HeadFC } from 'gatsby';
+import Layout from '../components/layout';
 
 const AboutPage = () => {
   return (
-    <main>
-      <h1>About Me</h1>
-      <Link to="/">Back to Homepage</Link>
+    <Layout pageTitle="About Me">
       <p>
         Hello there, I am the proud creator of this page. I'm building it with
         Gatsby
       </p>
-    </main>
+    </Layout>
   );
 };
 
